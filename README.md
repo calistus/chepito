@@ -11,32 +11,39 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Common UI Utility plugins used by Flutter devs on a daily basis
+
 
 ## Features
+* Toast
+* AlertDialogue
+* Loader
 
-Common UI Utility plugins used by Flutter devs on a daily basis: Toast, Loading indicator, and AlertDialogue
+## Getting started
 
-[//]: # (## Getting started)
-
-[//]: # ()
-[//]: # (TODO: List prerequisites and provide or point to information on how to)
-
-[//]: # (start using the package.)
 
 ## Usage
 
-This package contains common UI utility package. It is used to display Toast, Loading indicator, and AlertDialogue
-
+To show a toast message, use the following code:
 ```dart
 UIUtils.showToast("Hello dear");
 ```
 
-## Additional information
+To show a loader, use the following code:
+```dart
+UIUtils.showCircularLoader("Loading...");
+```
 
-[//]: # (TODO: Tell users more about the package: where to find more information, how to)
+To show an alert dialogue, use the following code:
+```dart
+UIUtils.showAlertDialogue(context, "Title here", "Here is the description");
+```
 
-[//]: # (contribute to the package, how to file issues, what response they can expect)
+To show simple spinner loader with no message, use the following code:
+```dart
+UIUtils.showSimpleLoader();
+```
 
-[//]: # (from the package authors, and more.)
+## Maintainers
+Name: Ilo Calistus
+Email: icalistus@gmail.com
